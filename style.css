@@ -1,0 +1,227 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Define as propriedades para o corpo da página */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte para o corpo da página */
+    background-color: #f5f5f5; /* Define a cor de fundo para o corpo da página */
+    margin: 0; /* Define a margem para zero */
+    padding: 0; /* Define o preenchimento para zero */
+}
+
+/* Define as propriedades para o cabeçalho */
+header {
+    background-color: #fff; /* Define a cor de fundo para o cabeçalho */
+    padding: 20px; /* Define o preenchimento para o cabeçalho */
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.1); /* Adiciona sombra ao cabeçalho */
+    display: flex; /* Define o cabeçalho como um elemento flexível */
+    justify-content: space-between; /* Define a distribuição do espaço entre os elementos flexíveis no cabeçalho */
+    align-items: center; /* Define a alinhamento dos elementos flexíveis no cabeçalho */
+}
+
+/* header acompanhar a tela conforme o usuário rola a página */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1; /* Garante que o header fique acima de outros elementos na página */
+    /* Outros estilos que você quiser aplicar ao seu header */
+  }
+
+/* Define as propriedades para a lista de navegação*/
+nav ul {
+    list-style: none; /* Remove os marcadores da lista de navegação */
+    display: flex; /* Define a lista de navegação como um elemento flexível */
+    margin-right: 10px; /* Define a margem à direita para a navegação */
+}
+
+/* Define as propriedades para o item da lista de navegação */
+nav li {
+    margin-right: 20px; /* Define a margem à direita para os itens da lista de navegação */
+}
+
+/* Define as propriedades para o link da lista de navegação */
+nav a {
+    color: #555; /* Define a cor do link da lista de navegação */
+    text-decoration: none; /* Remove a decoração do texto do link */
+}
+
+nav a:hover {
+    color: #ff6b6b; /* Define a nova cor da fonte rosa quando o mouse estiver sobre o link do menu nav */
+}
+
+/* Define as propriedades para o conteúdo principal */
+main {
+    max-width: 1200px; /* Define a largura máxima para o conteúdo principal */
+    margin: 0 auto; /* Define as margens esquerda e direita como "auto" para centralizar o conteúdo principal */
+    padding: 40px; /* Define o preenchimento para o conteúdo principal */
+    margin-top:50px;
+}
+
+/* Define as propriedades para a seção */
+section {
+    margin-bottom: 40px; /* Define a margem inferior para a seção */
+}
+
+/* Define a classe .colunas-2 */
+.colunas-2 {
+    display: flex; /* Define a classe como um elemento flexível */
+    flex-wrap: wrap; /* Define o conteúdo da classe para ser exibido em uma linha e, em seguida, "quebrar" para a próxima linha conforme necessário */
+    justify-content: space-between; /* Define a distribuição do espaço entre os elementos da classe */
+}
+
+/* Define o estilo para cada seção dentro da classe .colunas-2 */
+.colunas-2 section {
+    width: calc(50% - 20px); /* Define a largura de cada seção como 50% menos 20 pixels para a margem, criando duas colunas de igual largura */
+    margin-bottom: 40px; /* Define a margem inferior para cada seção como 40 pixels, criando espaço entre as seções */
+}
+
+/* Define as propriedades para a seção de produtos */
+.colunas-3 {
+    display: flex; /* Define a seção de produtos como um elemento flexível */
+    flex-wrap: wrap; /* Define o conteúdo da seção de produtos para ser exibido em uma linha e, em seguida, "quebrar" para a próxima linha conforme necessário */
+    justify-content: space-between; /* Define a distribuição do espaço entre os elementos flexíveis na seção de produtos */
+}
+
+.colunas-3 .produto {
+    flex-basis: calc(33.33% - 45px); /* Define a largura do produto na seção de produtos */
+}
+
+#produtos {
+    background-color: #f5f5f5; /* Define a cor de fundo para a seção de produtos */
+    padding: 40px; /* Define o preenchimento para a seção de produtos */
+    display: flex; /* Define a seção de produtos como um elemento flexível */
+    flex-wrap: wrap; /* Define o conteúdo da seção de produtos para ser exibido em uma linha e, em seguida, "quebrar" para a próxima linha conforme necessário */
+    justify-content: space-between; /* Define a distribuição do espaço entre os elementos na linha principal, de modo que haja espaço uniforme entre cada elemento */
+}
+
+.produto {
+    background-color: #fff; /* Define a cor de fundo dos produtos individuais */
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1); /* Adiciona sombra aos produtos */
+    padding: 20px; /* Define o preenchimento dos produtos */
+    margin-bottom: 20px; /* Define a margem inferior dos produtos */
+    flex-basis: calc(50% - 20px); /* Define a base flexível dos produtos, o que significa que o tamanho pode variar com base no tamanho da tela do dispositivo, enquanto mantém uma margem à esquerda e à direita de 20 pixels */
+    display: flex; /* Define o elemento como um container flexível, permitindo que os itens dentro dele sejam posicionados de maneira flexível.*/
+    flex-direction: column; /* Define a direção de posicionamento dos itens dentro do container como coluna, ou seja, um abaixo do outro. */
+    align-items: center; /* Alinha os itens verticalmente, centralizando-os no eixo vertical do container. */
+    text-align: center; /* Alinha o texto dentro do elemento pai ao centro, centralizando-o horizontalmente. */
+}
+
+
+.produto img {
+    width: 100%; /* Define a largura da imagem do produto como 100%, de modo que se ajuste ao tamanho do produto */
+    height: auto; /* Define a altura da imagem do produto como automática, para manter a proporção da imagem */
+}
+
+.produto h3 {
+	font-family: 'Lobster', cursive; /* Define a fonte do título h3 como Lobster, uma fonte cursiva */
+    color: #ff6b6b; /* Define a cor do título h3 como um tom de vermelho */
+    font-size: 20px; /* Define o tamanho da fonte do título do produto como 24 pixels */
+    margin: 10px 0; /* Define a margem superior e inferior do título do produto como 10 pixels e a margem esquerda e direita como 0 */
+}
+
+.produto p {
+    font-size: 18px; /* Define o tamanho da fonte do texto do produto como 18 pixels */
+    line-height: 1.4; /* Define a altura da linha do texto do produto como 1.4 vezes o tamanho da fonte */
+    margin-bottom: 20px; /* Define a margem inferior do texto do produto como 20 pixels */
+}
+
+.botao {
+    background-color: #3f88e9; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    padding: 10px 20px; /* Define o preenchimento do botão como 10 pixels na parte superior e inferior e 20 pixels na parte esquerda e direita */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Define o raio da borda do botão como 5 pixels, criando um efeito de arredondamento */
+    font-size: 18px; /* Define o tamanho da fonte do botão como 18 pixels */
+    cursor: pointer; /* Define o cursor do mouse como um ponteiro, indicando que o botão pode ser clicado */
+}
+
+.botao:hover {
+	background-color: #ff6b6b; /* Define a nova cor de fundo rosa quando o mouse estiver sobre o botão */
+	}
+	
+a {
+	text-decoration: none; /* Remove o sublinhado do link */
+}
+
+h2 {
+    font-family: 'Lobster', cursive; /* Define a fonte do título h2 como Lobster, uma fonte cursiva */
+    color:  #3f88e9; /* Define a cor do título h2 como um tom de vermelho */
+    margin-bottom: 23px; /* Define a margem inferior do título h2 como 20 pixels */
+}
+
+p {
+line-height: 1.5; /* Define a altura da linha do texto como 1.5 vezes o tamanho da fonte */
+}
+
+img {
+    max-width: 100%; /* Define a largura máxima da imagem como 100%, de modo que se ajuste ao tamanho do contêiner */
+    height: auto; /* Define a altura da imagem como automática, para manter a proporção da imagem */
+    margin-top: 20px; /* Define a margem superior da imagem como 20 pixels */
+    margin-bottom: 20px; /* Define a margem inferior da imagem como 20 pixels */
+}
+
+
+/* Contato */
+
+.contato {
+	background-color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+
+.contato h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.contato p {
+	font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+        background-color: #ff6b6b;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #333; /* Define a cor de fundo para o footer */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 20px; /* Define o preenchimento para o footer */
+    text-align: center; /* Centraliza o texto dentro do footer */
+    position: relative; /* Define o posicionamento do footer como absoluto */
+    bottom: 0; /* Alinha o footer na parte inferior da página */
+  }
+  
